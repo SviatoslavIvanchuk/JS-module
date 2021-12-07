@@ -1,0 +1,9 @@
+.linesBlock {
+    display: flex;
+}
+
+.cellsBlock {
+    border: 2px solid aqua;
+    padding: 5px;
+    margin: 10px;
+}
