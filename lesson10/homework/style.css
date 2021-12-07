@@ -1,0 +1,9 @@
+.firstTaskClass {
+    height: 100px;
+    width: 100px;
+    background: chocolate;
+}
+
+.filmsList li {
+    list-style-type: none;
+}
