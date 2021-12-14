@@ -1,0 +1,52 @@
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 33px;
+    column-gap: 33px;
+    justify-content: center;
+    position: absolute;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    width: 200px;
+    border: 2px solid #545454;
+    background: silver;
+}
+
+.postButton {
+    padding: 5px;
+    background: #005248;
+    border-radius: 8px;
+}
+
+.offCommentButton {
+    padding: 5px;
+    background: white;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    position: fixed;
+    right: 10%;
+    top: 340px;
+    z-index: 101;
+}
+
+.commentBlock {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 10%;
+    z-index: 100;
+    width: 250px;
+    height: 300px;
+    background: white;
+    border: 2px solid #029494;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 15px;
+    overflow: auto;
+}
