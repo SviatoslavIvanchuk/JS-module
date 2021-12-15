@@ -11,8 +11,7 @@ let userBlockButtonSend = document.createElement('button');
     userBlockButtonSend.innerText = 'Send Info'
 
 userBlockButtonSend.onclick = function () {
-        localStorage.setItem('Name', `${userBlockInputOne.value}`)
-        localStorage.setItem('Age', `${userBlockInputTwo.value}`)
+        localStorage.setItem('Name_and_Age', `${userBlockInputOne.value} ${userBlockInputTwo.value}`)
         userBlockInputOne.value = '';
         userBlockInputTwo.value = '';
 }
@@ -37,19 +36,19 @@ let carBlockInputThree = document.createElement('input');
     carBlockInputThree.placeholder = 'Volume';
 let carBlockButtonSend = document.createElement('button');
     carBlockButtonSend.innerText = 'Send Info'
-
+let autoArr = [];
 carBlockButtonSend.onclick = function () {
         let model = carBlockInputOne.value;
         let type = carBlockInputTwo.value;
         let volume = carBlockInputThree.value;
         let carArr = {Model: model, Type: type, Volume: volume}
-        localStorage.setItem('Car', JSON.stringify(carArr))
+        autoArr.push(carArr)
+        localStorage.setItem('Car', JSON.stringify(autoArr))
 
         carBlockInputOne.value = '';
         carBlockInputTwo.value = '';
         carBlockInputThree.value = '';
 }
-
 carBlock.append(carBlockInputOne);
 carBlock.append(carBlockInputTwo);
 carBlock.append(carBlockInputThree);
